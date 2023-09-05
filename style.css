@@ -1,33 +1,35 @@
-
+* {
+padding: 0%;
+margin: 0%;
+}
 h1.titulo {
-    display: inline-flex;
-    text-align: center;
+
     height: 60px;
-    width: 450px;
+    width: 410px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.7px;
     font-size: 50px;
     color: rgb(48, 48, 77);
     margin-bottom: 110px ;
-    margin-left: 600px;
+    margin-left: 40%;
     margin-top: 110px  ;
     font-weight: bolder;
-     }
+    }
 
 
 article.uno {
     display: flex;
     margin-top: 20px;
     flex-direction: row;
+    width: 100vw;
     margin-left: 50px;
     margin-bottom: 0px;
-
-}
+    }
 
 article.uno section {
-    box-sizing: content-box;  
+    
     height: 250px;
-    width: 450px;
+    width: 30%;
     background-color: rgb(249, 249, 247);
     color: rgb(168, 166, 166);
     text-align: center;
@@ -38,7 +40,7 @@ article.uno section {
     gap: 3px;
     margin-bottom:60px ;
     padding-top: 0px;
-}
+    }
 
 
 article.uno section img {
@@ -46,18 +48,16 @@ article.uno section img {
         bottom: 60px;
         width: 100px;
         height: 100px;
-        
-    }
+        }
 
 article.uno section img.sanyo {
         border-radius:  60px; 
-    }
+        }
 
 article.uno section h3 {
     letter-spacing: 0px;
     color: rgb(54, 54, 54);
     margin-bottom: 40px;
-
     }
 
 article.uno section div {
@@ -68,7 +68,7 @@ article.uno section div {
 
 
 button.uno {
-        margin:10px 750px 150px 750px;
+        margin:20px 49% 150px 48%;
         padding: 15px 48px;
         background-color: rgb(151, 72, 224);
         color: white;
@@ -80,21 +80,21 @@ button.uno {
         text-align: center;
         width: fit-content;
         height: fit-content;
-}
+        }
 
 button.uno:hover {
         background-color: rgb(166, 107, 221);
-}
+        }
     
 
 
 article.dos {
         display: flex;
         flex-direction: row;
-        width: 1600px;
+        width: 100vw;
         height: 220px;
         background-color: rgb(146, 77, 211);
-    }
+        }
     
 article.dos p {
         font-family: 'Roboto', sans-serif;
@@ -105,7 +105,7 @@ article.dos p {
         font-weight:bold;
         text-align: center;
         padding-top: 25px;
-    }
+        }
 
 article.dos button {
         
@@ -119,65 +119,75 @@ article.dos button {
         text-align: center;
         width: fit-content;
         height: fit-content;
-          
-    }
+        }
 
 
 footer {
 
         display:flex ;
-        width: 1600px;
+        width: 100vw;
         height: 250px;
-        background-color: rgb(31, 30, 30);
-         color: white;
-    }
+        background-color: #1E1E26;
+        color: white;
+        }
 
 footer section{
         width: 25%;
-        height: 200px;
         font-family: 'Be Vietnam';
         font-style: normal;
         letter-spacing: 0.8px;
-   
-}
+        }
 
 footer section:first-child{
     
     display: flex;
     flex-direction: column;
     text-align: center;
-    
-}
+    }
 footer section img.one {
     margin: 50px 160px 20px 160px;
     width:fit-content;
     height:fit-content;
-}
+    }
 
 footer section div {
     margin-top: 50px;
     display:flex;
     margin-left: 160px;
     gap : 15px;
+    }
 
-}
+footer section.list {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    }
 
+footer section.list div {
+        width: 50%;
+        display: flex;
+        align-content: flex-start ;
+        margin:0px;
+        margin-left: 70px ;
+        margin-top: 10px;
+        }
 
-footer section ul {
+footer section.list ul {
+    
     color: rgb(209, 209, 191);
     list-style: none;
     margin-top: 50px ;
+    }
 
-}
 footer section ul li {
     margin-bottom: 15px;
-}
+    }
 
 footer section:last-child {
     color: rgb(209, 209, 191);
     display: column;
     row-gap: 10px;
-}
+    }
 
 footer section:last-child input{
         padding: 15px 25px;
@@ -187,7 +197,7 @@ footer section:last-child input{
         border-radius: 22px;
         margin-top: 50px;
         margin-bottom: 70px;
-}
+        }
 
 
 footer section:last-child button {
@@ -206,3 +216,168 @@ footer section:last-child button {
 footer section:last-child p {
         margin-left: 60px;
 }
+
+
+
+@media (max-width: 480px) and (max-width: 600px) {
+    article.uno section:first-child {
+    display: none;
+}
+    article.uno section:last-child {
+    display: none;
+}
+
+h1.titulo {
+    
+    margin-bottom: 110px;
+    margin-left: 20%;
+    margin-top: 110px;
+    font-size: 36px;
+    width: fit-content;
+    }
+
+
+article.uno  {
+    margin-left: auto;
+    }
+
+article.uno section  {
+    height: 250px;
+    width: 98%;
+    margin-bottom:60px ;
+    }
+
+button.uno {
+    margin-left: 37%;
+    margin-bottom: 50px;
+    }
+
+article.dos {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 380px;
+    background-color: rgb(78, 197, 245);
+    }
+
+article.dos p {
+
+    width: 60vw;
+    margin-left: 20%;
+    margin-top: 5%;
+    }
+
+article.dos button {
+    
+    margin:40px 34% 10% 34%;
+    padding: 15px 40px;
+    background-color: rgb(15, 15, 15);
+    color: rgb(247, 246, 248);
+    border-radius: 22px;
+    width: 140px;
+    }
+
+footer {
+
+    display:flex ;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 500px;
+    color: white;
+    }
+
+
+footer section{
+    width: 100vw;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    letter-spacing: 0.8px;
+    position: relative;
+    bottom: 40px;
+    margin-left: 5%;
+    }
+
+
+footer section:last-child {
+    flex-direction: row;
+    height: 100px;
+    margin-bottom: 30px;
+    margin-top:0px ;
+    }
+    
+footer section:last-child input{
+    margin-top: 0px;
+    margin-left: 5%;
+    width: 260px;
+    margin-right: 7px;
+    }
+
+footer section:last-child button {
+    
+    margin-right: 0%;
+    }
+    
+footer section.list {
+    position: relative;
+    bottom: 80px;
+    display:inline-flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 190px;
+    }
+
+footer section.list div ul {
+    color: rgb(209, 209, 191);
+    list-style: none;
+    margin: 0%;
+    
+    }
+
+footer section.list div:last-child {
+    margin-right: 50px;
+    }
+
+
+footer section.list ul li {
+    margin-bottom: 15px;
+    }
+        
+footer section:first-child{
+
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 0px;
+    bottom: 80px;
+    position: relative;
+    }
+
+footer section img.one {
+    margin: 38px 33% 20px 33%;
+    width:fit-content;
+    height:fit-content;
+    }
+
+footer section div {
+
+    margin-top: 0px;
+    display:flex;
+    margin-left: 5%;
+    gap : 15%;
+    }
+
+footer section:last-child p {
+    color: rgb(100, 99, 99);
+    display: inline-block;
+    margin-left: 22%;
+    position: relative;
+    top: 280px;
+    font-size: smaller;
+    }
+        
+}
+
+
+
+
+
