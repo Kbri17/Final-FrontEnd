@@ -2,6 +2,8 @@
 padding: 0%;
 margin: 0%;
 }
+
+/* Aqui titulo de la seccion de deportistas*/
 h1.titulo {
 
     height: 60px;
@@ -16,8 +18,9 @@ h1.titulo {
     font-weight: bolder;
     }
 
+/* Aqui el css de los deportistas y su descripcion*/
 
-article.uno {
+section.uno {
     display: flex;
     margin-top: 20px;
     flex-direction: row;
@@ -26,7 +29,7 @@ article.uno {
     margin-bottom: 0px;
     }
 
-article.uno section {
+section.uno article {
     
     height: 250px;
     width: 30%;
@@ -43,24 +46,25 @@ article.uno section {
     }
 
 
-article.uno section img {
+section.uno article img {
         position: relative;
         bottom: 60px;
         width: 100px;
         height: 100px;
         }
 
-article.uno section img.sanyo {
+/* La imagen es originalmente cuadrada, aqui lo redondeo*/
+section.uno article img.sanyo {
         border-radius:  60px; 
         }
 
-article.uno section h3 {
+section.uno article h3 {
     letter-spacing: 0px;
     color: rgb(54, 54, 54);
     margin-bottom: 40px;
     }
 
-article.uno section div {
+section.uno article div {
         position: relative;
         bottom: 60px;
         padding-top: 0px;
@@ -82,13 +86,15 @@ button.uno {
         height: fit-content;
         }
 
+/* Aqui el hover de el boton de More, se aclara un poco al posiciarnos*/
 button.uno:hover {
         background-color: rgb(166, 107, 221);
         }
     
 
+/* Aqui la seccion dos : es pequeña incluye las letras y un boton*/
 
-article.dos {
+section.dos {
         display: flex;
         flex-direction: row;
         width: 100vw;
@@ -96,7 +102,7 @@ article.dos {
         background-color: rgb(146, 77, 211);
         }
     
-article.dos p {
+section.dos p {
         font-family: 'Roboto', sans-serif;
         color: white;
         font-size: 40px;
@@ -105,9 +111,10 @@ article.dos p {
         font-weight:bold;
         text-align: center;
         padding-top: 25px;
+        margin-top: 2%;
         }
 
-article.dos button {
+section.dos button {
         
         margin:90px 60px 90px 450px;
         padding: 15px 40px;
@@ -121,7 +128,7 @@ article.dos button {
         height: fit-content;
         }
 
-
+/* Aqui el footer que se divide en tres partes*/
 footer {
 
         display:flex ;
@@ -199,7 +206,7 @@ footer section:last-child input{
         margin-bottom: 70px;
         }
 
-
+/* Aqui el ultimo boton de Go en la ultima seccion del footer*/
 footer section:last-child button {
     
         padding: 15px 25px;
@@ -220,10 +227,10 @@ footer section:last-child p {
 
 
 @media (max-width: 480px) and (max-width: 600px) {
-    article.uno section:first-child {
+    section.uno article:first-child {
     display: none;
 }
-    article.uno section:last-child {
+    section.uno article:last-child {
     display: none;
 }
 
@@ -237,11 +244,11 @@ h1.titulo {
     }
 
 
-article.uno  {
+section.uno  {
     margin-left: auto;
     }
 
-article.uno section  {
+section.uno article {
     height: 250px;
     width: 98%;
     margin-bottom:60px ;
@@ -252,7 +259,7 @@ button.uno {
     margin-bottom: 50px;
     }
 
-article.dos {
+section.dos {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -260,14 +267,14 @@ article.dos {
     background-color: rgb(78, 197, 245);
     }
 
-article.dos p {
+section.dos p {
 
     width: 60vw;
     margin-left: 20%;
     margin-top: 5%;
     }
 
-article.dos button {
+section.dos button {
     
     margin:40px 34% 10% 34%;
     padding: 15px 40px;
@@ -277,6 +284,7 @@ article.dos button {
     width: 140px;
     }
 
+/* Aqui el footer , use el column-reverse para poner el lastchild de section primero.*/
 footer {
 
     display:flex ;
@@ -341,7 +349,8 @@ footer section.list div:last-child {
 footer section.list ul li {
     margin-bottom: 15px;
     }
-        
+
+/* Aqui la ultima seccion que es el first child en el modo desktop*/
 footer section:first-child{
 
     display: flex;
