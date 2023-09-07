@@ -9,8 +9,10 @@ header {
     align-items: center;
     display: flex;
     height: 100px;
+    width: 1440px;
     justify-content: space-around;
     text-align: center;
+
 }
 
 header ul {
@@ -123,6 +125,7 @@ header ul {
     align-items: center;
     gap: 80px;
     background: #8B48BF;
+    width: 1440px;
 }
 
 #titulo-informacion, #desktop-p2 {
@@ -132,6 +135,7 @@ header ul {
     flex-shrink: 0;
     color: #FFF;
     font-family: 'Be Vietnam', sans-serif;
+    
 }
 
 #desktop-p2 {
@@ -145,6 +149,16 @@ header ul {
     font-weight: 700;
 }
 
+#ol {
+    box-sizing: border-box;
+    width: 1440px ;
+    background-color: rgb(249, 249, 249);
+    padding: 2% 1%;
+    
+}
+
+
+
 /* Estilos para la lista ordenada */
 ol {
     list-style: none;
@@ -153,7 +167,8 @@ ol {
     display: flex;
     flex-wrap: wrap; /* Hacer que los elementos de la lista se envuelvan en filas */
     justify-content: center; /* Centrar horizontalmente los elementos */
-    margin: 5% 5%;
+    margin: 3% 3%;
+    
 }
 
 /* Estilos para cada elemento de la lista */
@@ -225,7 +240,7 @@ h1.titulo {
     font-size: 50px;
     color: rgb(48, 48, 77);
     margin-bottom: 110px ;
-    margin-left: 40%;
+    margin-left: 34%;
     margin-top: 110px  ;
     font-weight: bolder;
     }
@@ -236,19 +251,21 @@ section.uno {
     display: flex;
     margin-top: 20px;
     flex-direction: row;
-    width: 100vw;
-    margin-left: 50px;
+    width: 1335px;
+    margin-right: 3.6%;
+    margin-left: 3.6%;
     margin-bottom: 0px;
     }
 
+    /* Aqui la caja de cada deportista*/
 section.uno article {
     
     height: 250px;
-    width: 30%;
-    background-color: rgb(249, 249, 247);
+    width: 33%;
+    background-color: rgb(249, 249, 249);
     color: rgb(168, 166, 166);
     text-align: center;
-    font-size:21px;
+    font-size:20px;
     letter-spacing: 0.7px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 20px;
@@ -280,11 +297,12 @@ section.uno article div {
         position: relative;
         bottom: 60px;
         padding-top: 0px;
+        width: ;
     } 
 
 
 button.uno {
-        margin:20px 49% 150px 48%;
+        margin:20px 45% 150px 45%;
         padding: 15px 48px;
         background-color: rgb(151, 72, 224);
         color: white;
@@ -309,7 +327,7 @@ button.uno:hover {
 section.dos {
         display: flex;
         flex-direction: row;
-        width: 100vw;
+        width: 1440px;
         height: 220px;
         background-color: rgb(146, 77, 211);
         }
@@ -328,7 +346,7 @@ section.dos p {
 
 section.dos button {
         
-        margin:90px 60px 90px 450px;
+        margin:90px 60px 90px 350px;
         padding: 15px 40px;
         background-color: white;
         color: blueviolet;
@@ -344,13 +362,15 @@ section.dos button {
 footer {
 
         display:flex ;
-        width: 100vw;
+        width: 1440px;
         height: 250px;
         background-color: #1E1E26;
         color: white;
+        box-sizing: border-box;
         }
 
 footer section{
+        box-sizing: border-box;
         width: 25%;
         font-family: 'Be Vietnam';
         font-style: normal;
@@ -406,6 +426,7 @@ footer section:last-child {
     color: rgb(209, 209, 191);
     display: column;
     row-gap: 10px;
+    margin-right:8% ;
     }
 
 footer section:last-child input{
@@ -433,7 +454,7 @@ footer section:last-child button {
 }
 
 footer section:last-child p {
-        margin-left: 60px;
+        margin-left: 55px;
 }
 
 @media (min-width: 600px) {
@@ -445,7 +466,7 @@ footer section:last-child p {
     }
 }
 
-@media (max-width: 480px) and (max-width: 600px) {
+@media (max-width: 480px) {
     section.uno article:first-child {
     display: none;
 }
@@ -583,13 +604,15 @@ h1.titulo {
 
 
 section.uno  {
+    width: 450px;
     margin-left: auto;
+    box-sizing: border-box;
     }
 
 section.uno article {
     height: 250px;
     width: 98%;
-    margin-bottom:60px ;
+    margin-bottom:60px;
     }
 
 button.uno {
@@ -627,7 +650,7 @@ footer {
 
     display:flex ;
     flex-direction: column-reverse;
-    width: 100vw;
+    width: 1440px;
     height: 500px;
     color: white;
     }
@@ -640,7 +663,7 @@ footer section{
     letter-spacing: 0.8px;
     position: relative;
     bottom: 40px;
-    margin-left: 5%;
+    margin-left: 2%;
     }
 
 
@@ -653,7 +676,7 @@ footer section:last-child {
     
 footer section:last-child input{
     margin-top: 0px;
-    margin-left: 5%;
+    margin-left: 4%;
     width: 260px;
     margin-right: 7px;
     }
@@ -716,7 +739,7 @@ footer section div {
 footer section:last-child p {
     color: rgb(100, 99, 99);
     display: inline-block;
-    margin-left: 22%;
+    margin-left: 20%;
     position: relative;
     top: 280px;
     font-size: smaller;
