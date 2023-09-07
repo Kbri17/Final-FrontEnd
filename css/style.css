@@ -3,6 +3,216 @@ padding: 0%;
 margin: 0%;
 }
 
+
+/* Header */
+header {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Modificación para los detalles del menú*/
+.menu {
+    color: #242E52;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.menu:hover {
+    color: rgba(36, 46, 82, 0.60);
+    cursor: pointer; 
+}
+
+.menu::first-letter {
+    text-transform: capitalize;
+}
+
+/* Detalle de los dos botones de contacto*/
+.contact {
+    align-items: center;
+    background: #8B48BF;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1);
+    color: #FFF;
+    display: flex;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 13.181px;
+    font-weight: 500;
+    height: 44px;
+    justify-content: center;
+    padding: 10px;
+    width: 134px;
+}
+
+.contact:hover {
+    background-color: rgba(139, 72, 191, 0.70); /* Color de fondo al pasar el cursor */
+    cursor: pointer; 
+}
+
+/* Main */
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+#items-live {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 1090px;
+    height: 462px;
+}
+
+#img {
+    width: 100vw; /* La imagen ocupará el 50% del ancho del viewport */
+    max-width: 100%; /* Para asegurarte de que no se desborde del contenedor */
+    height: auto; /* Para mantener la relación de aspecto original */
+}
+
+
+/* Diseño de la información */
+#titulo {
+    color: #232C50;
+    text-align: right;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1.75px;
+}
+
+#p {
+    display: flex;
+    height: 71px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: right;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 1.03rem;
+    font-weight: 500;
+    line-height: 157.1%;
+}
+
+#contenido-live {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#informacion {
+    display: flex;
+    width: 100%;
+    padding: 40px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background: #8B48BF;
+}
+
+#titulo-informacion, #desktop-p2 {
+    width: 33%;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+#desktop-p2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#titulo-informacion{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Estilos para la lista ordenada */
+ol {
+    list-style: none;
+    counter-reset: my-counter;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap; /* Hacer que los elementos de la lista se envuelvan en filas */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    margin: 5% 5%;
+}
+
+/* Estilos para cada elemento de la lista */
+ol li {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-basis: calc(50% - 10px); /* Calcula el ancho de cada columna */
+}
+
+/* Estilos para el último elemento de la lista */
+ol li:last-child {
+    flex-basis: calc(50% - 10px); /* Ocupar el 50% del ancho disponible en la última fila */
+    margin-left: auto; /* Empujar el último elemento hacia la derecha */
+    margin-right: auto; /* Empujar el último elemento hacia la izquierda */
+}
+
+/* Estilos para el número de lista */
+ol li::before {
+    content: counter(my-counter, decimal-leading-zero); /* Agregar ceros a la izquierda */
+    counter-increment: my-counter;
+    color: white;
+    background-color: #8B48BF;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+ol h3 {
+    margin: 2%; /* Elimina el margen predeterminado del h3 */
+}
+
+ol p{
+    margin-right: 10%;
+}
+
+.numeracion h3, .numeracion-2 h3{
+    color: #323851;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.numeracion p, .numeracion-2 p {
+    color: #B3B2B7;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 156.6%; /* 25.523px */
+    letter-spacing: -0.163px;
+}
+
 /* Aqui titulo de la seccion de deportistas*/
 h1.titulo {
 
@@ -224,7 +434,14 @@ footer section:last-child p {
         margin-left: 60px;
 }
 
-
+@media (min-width: 600px) {
+    #bars {
+        display: none;
+    }
+    #mobile-p2{
+        display: none;
+    }
+}
 
 @media (max-width: 480px) and (max-width: 600px) {
     section.uno article:first-child {
@@ -232,6 +449,120 @@ footer section:last-child p {
 }
     section.uno article:last-child {
     display: none;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+ul {
+    display: none;
+}
+
+#contact-header {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+    gap: 12.5rem;
+}
+
+#logo {
+    display: inline-block;
+    width: 100px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Ajusta la altura para mantener la proporción original */
+}
+
+#bars {
+    width: 25px; /* Ancho deseado para el icono SVG */
+    height: 18px; /* Altura deseada para el icono SVG */
+    display: inline-block; /* Hacer que el icono SVG sea inline con otros elementos */
+    margin-right: 10px; /* Agregar margen entre el icono SVG y el icono "fa-bars" */
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    margin: 50% 10%;
+}
+
+#items-live {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#img {
+    max-width: 100%;
+}
+
+#informacion {
+    display: flex;
+    width: 100%;
+    padding: 20px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+    background: #3CDDF3;
+}
+
+#desktop-p2 {
+    display: none;
+}
+
+#titulo-informacion, #mobile-p2 {
+    width: 70%;
+}
+
+#mobile-p2 {
+    display: block;
+    text-align: left;
+    margin-left: 2%;
+    font-size: 16px;
+    margin-left: 2%;
+    font-weight: 500;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+.caja{
+    list-style: none; /* Elimina los marcadores de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    display: flex; /* Utiliza flexbox para controlar el diseño */
+    flex-direction: column; /* Organiza los elementos en una columna */
+}
+
+ol li::before {
+    display: none;
+}
+
+.contenido-numeracion h3{
+    border-radius: 50px 0px 0px 50px;
+    background: rgba(139, 72, 191, 0.30);
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0; 
+}
+
+.contenido-numeracion h3::before {
+    content: counter(my-counter, decimal-leading-zero);
+    counter-increment: my-counter;
+    color: white;
+    background-color: #8B48BF;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-block;
 }
 
 h1.titulo {
