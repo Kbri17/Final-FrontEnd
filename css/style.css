@@ -441,10 +441,7 @@ footer #copy-footer{
 }
 
 @media (max-width: 490px) {
-        section.athletes-area article:first-child {
-        display: none;
-    }
-        section.athletes-area article:last-child {
+        section.athletes-area article:nth-child(odd){
         display: none;
     }
 
